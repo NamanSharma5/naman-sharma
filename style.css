@@ -1,0 +1,97 @@
+/* Moved from index.html */
+
+/* Color Scheme */
+:root {
+  --primary-color: #49a670; /* Dark blue */
+  --secondary-color: #F1948A; /* Peach */
+  --accent-color: #49a670; /* Green */
+  --text-color: #333333; /* Dark gray */
+  --background-color: #F8F8F8; /* Light gray */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Sections */
+section {
+  padding: 20px; /* Reduced padding */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Social Media Icons */
+.fab {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Past Builds */
+#past-builds table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#past-builds th,
+#past-builds td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#past-builds th {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: left;
+}
+
+#past-builds td:nth-child(3) {
+  text-align: center; /* Center align the Demo buttons */
+}
+
+#past-builds a {
+  display: inline-block;
+  padding: 8px 12px; /* Adjusted padding for better icon fit */
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#past-builds a:hover {
+  background-color: var(--secondary-color);
+}
+
+#past-builds i {
+  font-size: 16px; /* Adjust icon size if necessary */
+}

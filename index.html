@@ -2,89 +2,13 @@
 <html>
   <head>
     <title>Naman Sharma</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-    <style>
-    /* Color Scheme */
-:root {
-  --primary-color: #49a670; /* Dark blue */
-  --secondary-color: #F1948A; /* Peach */
-  --accent-color: #49a670; /* Green */
-  --text-color: #333333; /* Dark gray */
-  --background-color: #F8F8F8; /* Light gray */
-}
-
-/* Global Styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  margin: 0;
-  padding: 0;
-}
-
- h2 {
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
-/* Header */
-header {
-  background-color: var(--primary-color);
-  color: #FFFFFF;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Sections */
-section {
-  padding: 40px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-section h2 {
-  margin-top: 0;
-}
-
-/* Social Media Icons */
-.fab {
-  font-size: 24px;
-  margin-right: 10px;
-}
-
-/* Past Builds */
-#past-builds ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#past-builds li {
-  margin-bottom: 10px;
-}
-
-#past-builds a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--accent-color);
-  color: #FFFFFF;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-#past-builds a:hover {
-  background-color: var(--secondary-color);
-}
-
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -94,28 +18,83 @@ section h2 {
       <h2>Bio</h2>
       <p>Positively curious :) | Imperial CS | Bloomberg AI | Palantir FDSE | love problems</p>
     </section>
+    <section id="social-media">
+      <h2>Key links: Social, Programming and Research</h2>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/namansharma5/" target="_blank"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://twitter.com/Naman_Sharma5" target="_blank"
+            ><i class="fab fa-twitter"></i> Twitter</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/NamanSharma5/" target="_blank"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/profile/Naman-Sharma-60/research" target="_blank">
+            <i class="fab fa-researchgate"></i> ResearchGate
+          </a>
+        </li>      
+      </ul>
+    </section>
     <section id="currently">
       <h2>Currently</h2>
       <p>Writing, training and deploying vision models in critical environments</p>
     </section>
-    <section id="social-media">
-      <h2>Social Media and GitHub</h2>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/namansharma5/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="https://twitter.com/Naman_Sharma5" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-           <li><a href="https://github.com/NamanSharma5/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-      </ul>
-    </section>
     <section id="past-builds">
       <h2>Past Builds</h2>
-      <ul>
-        <li><a href="https://nomoi.org.uk/" target="_blank">NOMOI</a></li>
-        <li><a href="https://dealmapper.app/" target="_blank">DealMapper</a></li>
-        <li><a href="https://www.linkedin.com/posts/namansharma5_how-many-times-have-you-gone-back-and-forth-activity-7112115560288542720-oM7l?utm_source=share&utm_medium=member_desktop" target="_blank">Promptly</a></li>
-        <li><a href="https://www.linkedin.com/posts/namansharma5_searching-for-a-place-but-dont-remember-activity-7124899965968998400-TYFp?utm_source=share&utm_medium=member_desktop" target="_blank">MapsAI</a></li>
-        <li><a href="https://www.linkedin.com/posts/namansharma5_gpt-canvas-unlocking-new-modalities-to-interface-activity-7143302823496093696-vy-L?utm_source=share&utm_medium=member_desktop" target="_blank">GPT Canvas</a></li>
-        <li><a href="https://www.linkedin.com/posts/namansharma5_no-gps-no-problem-vision-based-localization-activity-7188306145986416640-ze2P?utm_source=share&utm_medium=member_desktop" target="_blank">Vision Based Localisation and Navigation</a></li>
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Name of Project</th>
+            <th>Overview</th>
+            <th>Demo (Check them out!)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>World Models</td>
+            <td>Wrote and trained action-conditioned diffusion models to simulate worlds, optimising for latency, controllability and generalisability</td>
+            <td><a href="https://x.com/Naman_Sharma5/status/1809711579639726378" target="_blank"><i class="fas fa-solid fa-globe"></i></a></td>
+          </tr>
+          <tr>
+            <td>Vision Based Localisation and Navigation</td>
+            <td>Enabling an AI-powered camera-based localisation and navigation system for drones, robots, and more, when GPS is not available.</td>
+            <td><a href="https://www.linkedin.com/posts/namansharma5_no-gps-no-problem-vision-based-localization-activity-7188306145986416640-ze2P?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fas fa-map-marker-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td>GPT Canvas</td>
+            <td>Mindmapping and whiteboarding with LLMs, drill deep, search broadly, and more.</td>
+            <td><a href="https://www.linkedin.com/posts/namansharma5_gpt-canvas-unlocking-new-modalities-to-interface-activity-7143302823496093696-vy-L?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fas fa-paint-brush"></i></a></td>
+          </tr>
+          <tr>
+            <td>MapsAI</td>
+            <td>Semantic search for Google Maps, when your memories, pictures, and conversations are enough to describe where you want to go.</td>
+            <td><a href="https://www.linkedin.com/posts/namansharma5_searching-for-a-place-but-dont-remember-activity-7124899965968998400-TYFp?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fas fa-map"></i></a></td>
+          </tr>
+          <tr>
+            <td>Promptly</td>
+            <td>Community-driven prompt engineering platform: recommending the best prompts as you type, based on what people like you liked in the past.</td>
+            <td><a href="https://www.linkedin.com/posts/namansharma5_how-many-times-have-you-gone-back-and-forth-activity-7112115560288542720-oM7l?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fas fa-comments"></i></a></td>
+          </tr>
+          <tr>
+            <td>DealMapper</td>
+            <td>A mobile e-commerce app putting 4,000+ scraped deals on a map for 100s of students to find, share, and enjoy.</td>
+            <td><a href="https://dealmapper.app/" target="_blank"><i class="fas fa-shopping-cart"></i></a></td>
+          </tr>
+          <tr>
+            <td>NOMOI</td>
+            <td>Using your AI + your webcam to help you work ergonomically and safely during the pandemic, including posture tracking, mask detection, and more.</td>
+            <td><a href="https://nomoi.org.uk/" target="_blank"><i class="fas fa-user-md"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </body>
 </html>
