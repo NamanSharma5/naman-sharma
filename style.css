@@ -52,6 +52,10 @@ header {
   right: 20px;
 }
 
+.header-nav-home {
+  right: 60px;
+}
+
 .header-nav-left {
   left: 20px;
 }
@@ -95,6 +99,13 @@ section h2 {
 .fab {
   font-size: 24px;
   margin-right: 10px;
+}
+
+.substack-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  vertical-align: -5px;
 }
 
 /* Past Builds */
