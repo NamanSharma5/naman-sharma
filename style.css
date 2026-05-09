@@ -38,6 +38,28 @@ header {
   color: #FFFFFF;
   padding: 20px;
   text-align: center;
+  position: relative;
+}
+
+.header-nav {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-nav a {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-nav a:hover {
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
 }
 
 /* Sections */
@@ -94,4 +116,54 @@ section h2 {
 
 #past-builds i {
   font-size: 16px; /* Adjust icon size if necessary */
+}
+
+/* Blog */
+.substack-link {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.substack-link a {
+  display: inline-block;
+  background-color: #FF6719;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.substack-link a:hover {
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+}
+
+.blog-post {
+  background-color: #FFFFFF;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.blog-post h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.blog-post .post-date {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.blog-post p {
+  line-height: 1.6;
+}
+
+.blog-post ul,
+.blog-post ol {
+  line-height: 1.6;
 }

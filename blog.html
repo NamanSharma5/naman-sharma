@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog - Naman Sharma</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html" style="color: #FFFFFF; text-decoration: none;">Naman Sharma</a></h1>
+      <nav class="header-nav">
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
+    <section id="blog">
+      <h2>Blog</h2>
+      <div class="substack-link">
+        <a href="https://substack.com/@namansharma5" target="_blank">
+          <i class="fas fa-external-link-alt"></i> Prefer Substack
+        </a>
+      </div>
+
+      <article class="blog-post">
+        <h3>The Forward Deployed Model</h3>
+        <p class="post-date">14 December 2025</p>
+        <p>The Forward Deployed model is the ultimate product incubator.</p>
+        <p>It's why tools like <em>Linter Agent</em> exist today.</p>
+        <p>The leverage isn't just the technology &mdash; it's the team structure.</p>
+        <p>Lean teams of 2&ndash;3 own the full vertical slice: discovery, building, go-to-market, and deployment.</p>
+        <p><strong>Discovery</strong><br />
+          We embed with customers to learn about problems firsthand, separating symptoms from root causes.</p>
+        <p><strong>Iteration</strong><br />
+          Build fast and fail early. Scale doesn't matter yet &mdash; trust and real user adoption do.</p>
+        <p><strong>Validation</strong><br />
+          Test early wins across customers &mdash; do others actually care about this problem?</p>
+        <p>This is where product taste matters: deciding what stays a custom fix and what becomes a scalable AI capability.</p>
+        <p>Linter Agent wasn't a guess. It was the same question, heard in different forms, across many customers.</p>
+        <p>Reach out if you are interested in learning more about Linter Agent or the Forward Deployed model, more broadly.</p>
+        <p>The kicker: you're rarely the only team to spot a good problem. Next time, I'll talk about how Palantir encourages competition so only the best execution wins.</p>
+      </article>
+
+      <article class="blog-post">
+        <h3>Competition at Palantir</h3>
+        <p class="post-date">January 2026</p>
+        <p>Palantir's AI-FDE is the substrate on which Linter Agent is built.</p>
+        <p>But how was AI-FDE itself built?</p>
+        <p>It wasn't a single, top-down roadmap. As Shyam Sankar notes, it was the result of multiple internal teams working on the same problem. Internal competition isn't a bug &mdash; it's the mechanism that forces the best execution to the surface.</p>
+        <p>When internal competition works, the product thrives. Here is why:</p>
+        <p><strong>Theories vs. Empirics</strong><br />
+          At Palantir, code is open source internally. Given the current state of AI coding agents, there are zero barriers to turning an idea into reality. Don't argue about the "right" way to build; let the empirics speak for themselves and let the users decide what sticks.</p>
+        <p><strong>Beating Complacency</strong><br />
+          Products built on inherited monopolies often stagnate &mdash; look at Siri vs ChatGPT's trajectory. No internal competition leads to a "default" mindset. You have to earn your place in the stack every day.</p>
+        <p><strong>Owning the Direction</strong><br />
+          Because there are no de-facto monopolies internally, you have the freedom to take a product in an independent direction. This is where judgement &mdash; or "taste" as we call it &mdash; matters:</p>
+        <ul>
+          <li>Which user group do you obsess over?</li>
+          <li>How do you reach them?</li>
+          <li>How do users drive product direction and vice-versa?</li>
+        </ul>
+        <p>Usage is a good metric, but the real goal is finding the economic value downstream of that usage. What is the value function? (I'll talk more about this next time&hellip;)</p>
+        <p><strong>Commoditisation is Inevitable</strong><br />
+          Competition means your best features will eventually commoditise. This forces you to think about how your product compounds.</p>
+        <p>If you rely on open source to build quickly, you have to find your unique value proposition &mdash; whether that's a user growth flywheel or capturing the fidelity of a user's preferences and decision-making process so deeply that shifting to a competitor is no longer worth the lift.</p>
+        <p>The best execution wins because it has to.</p>
+        <p>Palantir's AI-FDE is the substrate on which Linter Agent is built. Reach out if you're interested in how we're building the next generation of AI tools at Palantir.</p>
+      </article>
+
+      <article class="blog-post">
+        <h3>What do smarter models mean for white-collar labour like me?</h3>
+        <p class="post-date">February 2026</p>
+        <p><em>An FDE's perspective.</em></p>
+        <p>I recently gave a talk at a Palantir all-hands for Forward Deployed AI Engineers &mdash; sharing some ideas below.</p>
+        <p>The purpose of an FDE doesn't change, but an FDE's leverage is growing significantly as techniques for collaborating with AI labour evolve, with emphasis on context management, orchestration and verification.</p>
+        <p><strong>What isn't changing</strong></p>
+        <p>The purpose of a forward deployed engineer:</p>
+        <ol>
+          <li>finding and creating meaningful value</li>
+          <li>getting your use cases into production &mdash; only then thinking about scaling through product, relationships or brand</li>
+        </ol>
+        <p>Finding meaningful value means finding the root cause, not solving the symptom. Nothing works better than showing an MVP on real data to SMEs and watching where it earns trust, where it breaks, and where it changes decisions. Iterate quickly and keep the feedback loop tight.</p>
+        <p><strong>What's changing</strong></p>
+        <p>Five years ago, the bottleneck was building fast enough to keep stakeholders engaged. This bottleneck is fast disappearing as AI agents get better.</p>
+        <p>The best FDEs who are compounding value today are leaning into AI, focusing on:</p>
+        <p><strong>Context management</strong><br />
+          Writing down context to a fidelity where any person, or agent, can pick up from where you left off. Tactically, this means centralised knowledge bases (ontology, monorepos, &hellip;), easy to search (good indices) and evolving with human feedback (simple UXs).</p>
+        <p><strong>Orchestration</strong><br />
+          Over time we've seen AI's remit expand from chatbots to agents and so on. Organisations are now running workflows and business processes with agents. Orchestration is defining the process graph (key steps and handoffs), escalation (how are errors and uncertainty handled), and observability (what are your agents doing under the hood).</p>
+        <p><strong>Verification</strong><br />
+          As AI's remit grows, so does its output, which puts greater focus on verification and alignment. Encoding the checks your SME applies intuitively, and closing the loop so the system can self-correct rather than silently drift. Put differently: what's required to get sign-off?</p>
+        <p><strong>Concluding thoughts</strong></p>
+        <p>Right now, there's a lot of FOMO &mdash; new model releases, impressive demos, huge fundraising rounds.</p>
+        <p>Focus on the first principles. Your advantage as an FDE is proximity to reality: the customer's data, decisions, and bottlenecks. Remove the next bottleneck, get your agentic workflows into production, and let usage pull you up the abstraction ladder. That's the compounding loop.</p>
+      </article>
+    </section>
+  </body>
+</html>
