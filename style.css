@@ -101,6 +101,10 @@ section h2 {
   margin-right: 10px;
 }
 
+#social-media li {
+  margin-bottom: 6px;
+}
+
 .substack-icon {
   width: 22px;
   height: 22px;
