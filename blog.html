@@ -36,7 +36,7 @@
       <article id="million-dollar-agent" class="blog-post">
         <h3>The $1M Agent: Three Lessons From Building Linter Agent</h3>
         <p class="post-date">May 2026</p>
-        <p>Linter Agent optimises data pipelines, and has so far transformed 100+ slow, expensive pipelines into faster, cheaper ones across 5+ enterprises. Whilst building this agent, 3 key areas have stood out:</p>
+        <p>Linter Agent optimises data pipelines, and has so far transformed 100+ slow, expensive pipelines into faster, cheaper ones across 5+ enterprises. Saving over $1m in under 6 months. Whilst building this agent, 3 key areas have stood out:</p>
         <ol>
           <li>What should the agent do?</li>
           <li>How to build trust in our agents?</li>
@@ -66,7 +66,6 @@
                   <li>Alternately, think of internal teams that rotate around to do audits (e.g. cyber security swat teams).</li>
                 </ul>
               </li>
-              <li>If you had 10 interns, what would you ask them to do? For example, at a software company, there could be some telemetry infra that's necessary but hasn't yet been prioritised.</li>
             </ul>
           </li>
         </ol>
@@ -91,7 +90,7 @@
         <p><strong>Tacit knowledge is, by definition, not in the trace.</strong></p>
         <p>Logging the agent's reasoning tells you what the agent considered. It doesn't tell you what an experienced reviewer would have noticed and the agent missed. The data you need is in the SME's head, and the only way to get it is to ask &mdash; at the right moment, with the right structure, in a UX they'll actually engage with. Free-text PR comments put the onus on the reviewer, whereas structured questions tied to the specific data/decision help the reviewer.</p>
         <p><strong>Experts can disagree, and the disagreement is the signal.</strong></p>
-        <p>Two SREs will give you different opinions on the same Linter Agent PR. Both will sound right. If your feedback system treats this as noise to average over, you'll get an agent that's mediocre by consensus. The leverage is in surfacing the disagreement and asking the disambiguating question: <em>what about this case made you call it differently from a similar one last month?</em> The answer is a constraint &mdash; a context variable the agent didn't know about &mdash; and now it does.</p>
+        <p>Two SREs will give you different opinions on the same Linter Agent PR. Both will sound right. If your feedback system treats this as noise to average over, you'll get an agent that's mediocre by consensus. The leverage is in surfacing the disagreement and asking the disambiguating question: <em>what about this case made you call it differently from a similar one last month?</em> <strong>The answer is a constraint &mdash; a context variable the agent didn't know about &mdash; and now it does.</strong></p>
         <p>What I want Linter Agent to compound on:</p>
         <ul>
           <li>the scope and complexity of an actionable optimisation increasing</li>
@@ -100,7 +99,7 @@
         </ul>
         <p>These are the visible outputs. The mechanism underneath them is the same mechanism that grows a junior engineer into a senior one: better intuitions about what matters in a given context, learned from being corrected by someone who already knows.</p>
         <p>The custom UX is where this happens. It asks the right question, shows the right comparable cases, and captures not just the verdict but the context the verdict depended on. That's the flywheel.</p>
-        <p>The agents that compound are the ones whose reviewers are giving them apprenticeship, not approval.</p>
+        <p><strong>The agents that compound are the ones whose reviewers are giving them apprenticeship, not approval.</strong></p>
       </article>
 
       <article id="white-collar" class="blog-post">
