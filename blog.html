@@ -26,11 +26,81 @@
       <div class="toc">
         <h2>Contents</h2>
         <ol>
+          <li><a href="#million-dollar-agent">The $1M Agent: Three Lessons From Building Linter Agent</a> <span class="toc-date">May 2026</span></li>
           <li><a href="#white-collar">What do smarter models mean for white-collar labour like me?</a> <span class="toc-date">Feb 2026</span></li>
           <li><a href="#competition">Competition at Palantir</a> <span class="toc-date">Jan 2026</span></li>
           <li><a href="#forward-deployed">The Forward Deployed Model</a> <span class="toc-date">Dec 2025</span></li>
         </ol>
       </div>
+
+      <article id="million-dollar-agent" class="blog-post">
+        <h3>The $1M Agent: Three Lessons From Building Linter Agent</h3>
+        <p class="post-date">May 2026</p>
+        <p>Linter Agent optimises data pipelines, and has so far transformed 100+ slow, expensive pipelines into faster, cheaper ones across 5+ enterprises. Saving over $1m in under 6 months. Whilst building this agent, 3 key areas have stood out:</p>
+        <ol>
+          <li>What should the agent do?</li>
+          <li>How to build trust in our agents?</li>
+          <li>How do agents compound and self-improve over time?</li>
+        </ol>
+        <p>Let's break these down:</p>
+
+        <h4>What should the agent do?</h4>
+        <p>Building agents has become much easier.</p>
+        <p>I can now prompt Claude Code to build a custom agent using an agent SDK, describe its responsibility, tools and data access in natural language, then give it examples and tests so it can run, fail and improve.</p>
+        <p>The bottleneck has become purpose &mdash; where can an agent fit into my company and what should it do?</p>
+        <p>Here are some perspectives:</p>
+        <ol>
+          <li>
+            <strong>Backlogged skilled work</strong>
+            <ul>
+              <li>Linter Agent went after code optimisations &mdash; this is an abundant space where years (/decades for pre-cloud stacks) of legacy code has accumulated and the bottleneck is squarely on skilled human labour.</li>
+              <li><strong>Where are you accepting delays, bringing in consultants or paying overtime to remote workers?</strong></li>
+            </ul>
+          </li>
+          <li>
+            <strong>Increase the search space</strong> &mdash; work where humans currently sample, audit, or ignore low-value cases because full review is too expensive
+            <ul>
+              <li>In large enterprises there are certain dollar values under which most approvals are automated because the cost of human verification is too high relative to the volume; this changes when you have a set of AI eyes!
+                <ul>
+                  <li>For example, in procurement, collections, support, etc.</li>
+                  <li>Alternately, think of internal teams that rotate around to do audits (e.g. cyber security swat teams).</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h4>How to build trust in our agents?</h4>
+        <p>Linter Agent has generated over 50 PRs; what matters is getting these merged &mdash; this can be the tough part, from chasing SMEs down to iterating on tacit knowledge.</p>
+        <p>Here are some questions we should answer early on:</p>
+        <ul>
+          <li>Who signs off your work? Who are the "Oracles" or SMEs you turn to when unsure?</li>
+          <li>What do they need to see to be able to quickly come to a conclusion on your agent's outcome? How can you make it easier/faster for the approver to get to a yes?</li>
+        </ul>
+        <p>I've learnt that if reviewers need extra data to approve/reject, then that data is valuable missing context for your agent.</p>
+        <p>Do not only optimise the agent's output. <strong>Optimise the review path.</strong></p>
+        <p>For Linter Agent's approvers, coding/data outputs are easier to verify, using compilation checks, tracking non-functional attributes (latencies) and SQL analysis over the final datasets (branch level data comparison to user defined precision).</p>
+        <p>A note on change management: Linter Agent mostly runs in the background. Some agents are more front-and-centre and change how people work day to day. In those cases, adoption has required a more personal human touch: helping teams understand what the agent is doing, where it fits, and how their role changes around it.</p>
+        <p>I am particularly interested in how others are building adoption in organisations with widespread legacy software. How are you using AI to productise what was previously a services-heavy change management motion?</p>
+
+        <h4>How do agents compound and self-improve over time?</h4>
+        <p>At work, we often value experience, as we've seen people get better at their responsibilities over time.</p>
+        <p>They learn the edge cases, the shortcuts, the exceptions, the preferences of reviewers, and the hidden constraints that never quite make it into documentation.</p>
+        <p>For agents to compound the same way, they have to absorb tacit knowledge from the SMEs around them. That sounds straightforward and isn't, for two reasons.</p>
+        <p><strong>Tacit knowledge is, by definition, not in the trace.</strong></p>
+        <p>Logging the agent's reasoning tells you what the agent considered. It doesn't tell you what an experienced reviewer would have noticed and the agent missed. The data you need is in the SME's head, and the only way to get it is to ask &mdash; at the right moment, with the right structure, in a UX they'll actually engage with. Free-text PR comments put the onus on the reviewer, whereas structured questions tied to the specific data/decision help the reviewer.</p>
+        <p><strong>Experts can disagree, and the disagreement is the signal.</strong></p>
+        <p>Two SREs will give you different opinions on the same Linter Agent PR. Both will sound right. If your feedback system treats this as noise to average over, you'll get an agent that's mediocre by consensus. The leverage is in surfacing the disagreement and asking the disambiguating question: <em>what about this case made you call it differently from a similar one last month?</em> <strong>The answer is a constraint &mdash; a context variable the agent didn't know about &mdash; and now it does.</strong></p>
+        <p>What I want Linter Agent to compound on:</p>
+        <ul>
+          <li>the scope and complexity of an actionable optimisation increasing</li>
+          <li>median end-to-end time falling</li>
+          <li>fewer interventions between PR opened and merged</li>
+        </ul>
+        <p>These are the visible outputs. The mechanism underneath them is the same mechanism that grows a junior engineer into a senior one: better intuitions about what matters in a given context, learned from being corrected by someone who already knows.</p>
+        <p>The custom UX is where this happens. It asks the right question, shows the right comparable cases, and captures not just the verdict but the context the verdict depended on. That's the flywheel.</p>
+        <p><strong>The agents that compound are the ones whose reviewers are giving them apprenticeship, not approval.</strong></p>
+      </article>
 
       <article id="white-collar" class="blog-post">
         <h3>What do smarter models mean for white-collar labour like me?</h3>

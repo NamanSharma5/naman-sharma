@@ -200,6 +200,13 @@ section h2 {
   margin-bottom: 4px;
 }
 
+.blog-post h4 {
+  color: var(--primary-color);
+  margin-top: 28px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
 .blog-post .post-date {
   color: #888;
   font-size: 14px;
